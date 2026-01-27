@@ -25,12 +25,12 @@ function handleAnalytics() {
   <div v-if="!isAndroid">
     <div class="custom-block warning">
       <p class="custom-block-title">
-        Unsupported operating system
+        Sistema operacional não suportado
       </p>
       <p>
-        <strong>Mihon</strong> is an <strong>Android app</strong> only.
-        Use an <strong>Android device with Mihon installed</strong> to
-        add this extension repo.
+        <strong>Mihon</strong> é apenas um <strong>aplicativo Android</strong>.
+        Use um <strong>dispositivo Android com Mihon instalado</strong> para
+        adicionar este repositório de extensões.
       </p>
     </div>
   </div>
@@ -41,11 +41,11 @@ function handleAnalytics() {
         :href="`tachiyomi://add-repo?url=${encodeURIComponent(GITHUB_EXTENSION_MIN_JSON)}`"
         @click="handleAnalytics"
       >
-        <span class="text">Add repository</span>
+        <span class="text">Adicionar repositório</span>
       </a>
     </div>
     <span class="version-disclaimer">
-      Requires <strong>Tachiyomi 0.15.2</strong> or newer.
+      Requer <strong>Mihon 0.16.4</strong> ou mais recente.
     </span>
   </div>
 </template>

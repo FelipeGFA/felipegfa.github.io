@@ -27,7 +27,7 @@ const groupName = computed(() => {
       <span>{{ groupName }}</span>
 
       <span class="extensions-total">
-        Total:
+        Total de extensões:
         <span class="extensions-total-sum">
           {{ totalCount }}
         </span>

@@ -47,19 +47,19 @@ const labelPosition = computed(() => isSmallScreen.value ? 'top' : 'right')
 <template>
   <ClientOnly>
     <div class="filters-list">
-      <ElForm label-width="120px" :label-position="labelPosition">
-        <ElFormItem label="Search:">
+      <ElForm label-width="150px" :label-position="labelPosition">
+        <ElFormItem label="Buscar:">
           <ElInput
             :model-value="search"
-            placeholder="Search extensions by name or ID..."
+            placeholder="Buscar extensões por nome ou ID..."
             clearable
             @update:model-value="$emit('update:search', $event)"
           />
         </ElFormItem>
-        <ElFormItem label="Languages:">
+        <ElFormItem label="Idiomas:">
           <ElSelect
             :model-value="lang"
-            placeholder="Show specific languages..."
+            placeholder="Mostrar idiomas específicos..."
             multiple
             clearable
             @update:model-value="$emit('update:lang', $event)"
@@ -72,23 +72,23 @@ const labelPosition = computed(() => isSmallScreen.value ? 'top' : 'right')
             />
           </ElSelect>
         </ElFormItem>
-        <ElFormItem label="Sort by:">
+        <ElFormItem label="Ordenar:">
           <ElRadioGroup
             :model-value="sort"
             @update:model-value="$emit('update:sort', $event)"
           >
-            <ElRadio label="Ascending" />
-            <ElRadio label="Descending" />
+            <ElRadio label="Ascending">Crescente</ElRadio>
+            <ElRadio label="Descending">Decrescente</ElRadio>
           </ElRadioGroup>
         </ElFormItem>
-        <ElFormItem label="Display mode:">
+        <ElFormItem label="Exibição:">
           <ElRadioGroup
             :model-value="nsfw"
             @update:model-value="$emit('update:nsfw', $event)"
           >
-            <ElRadio label="NSFW" />
-            <ElRadio label="SFW" />
-            <ElRadio label="Show all" />
+            <ElRadio label="NSFW">+18</ElRadio>
+            <ElRadio label="SFW">Seguro</ElRadio>
+            <ElRadio label="Show all">Todos</ElRadio>
           </ElRadioGroup>
         </ElFormItem>
       </ElForm>

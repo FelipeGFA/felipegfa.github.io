@@ -34,12 +34,12 @@ function handleAnalytics(apk: string) {
         {{ pkgId }}
       </div>
     </div>
-    <Badge v-if="props.item.nsfw" type="danger" :text="item.version" title="This extension contains NSFW entries." />
-    <Badge v-else type="info" :text="item.version" title="This extension is free from NSFW entries." />
+    <Badge v-if="props.item.nsfw" type="danger" :text="item.version" title="Esta extensão contém conteúdo +18." />
+    <Badge v-else type="info" :text="item.version" title="Esta extensão é livre de conteúdo +18." />
     <a
       :href="apkUrl"
       class="extension-download"
-      title="Download APK"
+      title="Baixar APK"
       :download="item.apk"
       @click="handleAnalytics(item.apk)"
     >
