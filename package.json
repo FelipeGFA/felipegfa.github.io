@@ -1,5 +1,5 @@
 {
-  "name": "keiyoushi-website",
+  "name": "felipegfa-website",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,24 +20,15 @@
     "axios": "^1.6.5",
     "element-plus": "^2.5.2",
     "lodash.groupby": "^4.6.0",
-    "markdown-it-shortcode-tag": "^1.1.0",
     "unplugin-element-plus": "^0.8.0",
     "v-lazy-image": "^2.1.1"
   },
   "devDependencies": {
-    "@mdit/plugin-attrs": "^0.8.0",
-    "@mdit/plugin-figure": "^0.8.0",
-    "@mdit/plugin-img-lazyload": "^0.8.0",
-    "@mdit/plugin-img-mark": "^0.8.0",
-    "@mdit/plugin-img-size": "^0.8.0",
-    "@mdit/plugin-include": "^0.8.0",
     "@types/lodash.groupby": "^4.6.9",
-    "@types/markdown-it": "^13.0.7",
     "@types/node": "^20.11.5",
     "stylus": "^0.62.0",
     "vite": "^5.0.12",
     "vitepress": "1.0.0-rc.39",
-    "vitepress-plugin-tabs": "^0.5.0",
     "vue": "^3.4.15"
   },
   "pnpm": {

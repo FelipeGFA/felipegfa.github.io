@@ -4,7 +4,7 @@
 import type { UseQueryOptions } from '@tanstack/vue-query'
 import { useQuery } from '@tanstack/vue-query'
 import axios from 'axios'
-import { GITHUB_EXTENSION_MIN_JSON } from '../../config/constants'
+import { GITHUB_EXTENSION_MIN_JSON_ANI } from '../../config/constants'
 
 export type ReleaseType = 'stable' | 'preview'
 
@@ -30,11 +30,11 @@ export interface Source {
 type UseExtensionsRepositoryQueryOptions<S = Extension[]> =
   UseQueryOptions<Extension[], Error, S>
 
-export default function useExtensionsRepositoryQuery<S = Extension[]>(options: UseExtensionsRepositoryQueryOptions<S> = {}) {
+export default function useExtensionsRepositoryQueryAni<S = Extension[]>(options: UseExtensionsRepositoryQueryOptions<S> = {}) {
   return useQuery<Extension[], Error, S>({
-    queryKey: ['extensions'],
+    queryKey: ['extensions-ani'],
     queryFn: async () => {
-      const { data } = await axios.get<Extension[]>(GITHUB_EXTENSION_MIN_JSON)
+      const { data } = await axios.get<Extension[]>(GITHUB_EXTENSION_MIN_JSON_ANI)
 
       return data
     },

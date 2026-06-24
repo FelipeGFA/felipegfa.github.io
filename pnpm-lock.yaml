@@ -26,9 +26,6 @@ importers:
       lodash.groupby:
         specifier: ^4.6.0
         version: 4.6.0
-      markdown-it-shortcode-tag:
-        specifier: ^1.1.0
-        version: 1.1.0
       unplugin-element-plus:
         specifier: ^0.8.0
         version: 0.8.0(rollup@4.34.6)
@@ -36,30 +33,9 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
     devDependencies:
-      '@mdit/plugin-attrs':
-        specifier: ^0.8.0
-        version: 0.8.0
-      '@mdit/plugin-figure':
-        specifier: ^0.8.0
-        version: 0.8.0
-      '@mdit/plugin-img-lazyload':
-        specifier: ^0.8.0
-        version: 0.8.0
-      '@mdit/plugin-img-mark':
-        specifier: ^0.8.0
-        version: 0.8.0
-      '@mdit/plugin-img-size':
-        specifier: ^0.8.0
-        version: 0.8.0
-      '@mdit/plugin-include':
-        specifier: ^0.8.0
-        version: 0.8.0
       '@types/lodash.groupby':
         specifier: ^4.6.9
         version: 4.6.9
-      '@types/markdown-it':
-        specifier: ^13.0.7
-        version: 13.0.9
       '@types/node':
         specifier: ^20.11.5
         version: 20.17.17
@@ -72,9 +48,6 @@ importers:
       vitepress:
         specifier: 1.0.0-rc.39
         version: 1.0.0-rc.39(@algolia/client-search@5.20.2)(@types/node@20.17.17)(async-validator@4.2.5)(axios@1.7.9)(postcss@8.5.2)(search-insights@2.17.3)(stylus@0.62.0)
-      vitepress-plugin-tabs:
-        specifier: ^0.5.0
-        version: 0.5.0(vitepress@1.0.0-rc.39(@algolia/client-search@5.20.2)(@types/node@20.17.17)(async-validator@4.2.5)(axios@1.7.9)(postcss@8.5.2)(search-insights@2.17.3)(stylus@0.62.0))(vue@3.5.13)
       vue:
         specifier: ^3.4.15
         version: 3.5.13
@@ -359,59 +332,6 @@ packages:
 
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
-
-  '@mdit/plugin-attrs@0.8.0':
-    resolution: {integrity: sha512-ewmx5i+b3M4CRJNDpDNBA0YTHa1snn+adDsDDpDtPPSzCH1NhtWXdzwI0TrcCQUnueeSEEWX/wY4ESo+NRkBNQ==}
-    engines: {node: '>= 18'}
-    peerDependencies:
-      markdown-it: ^14.0.0
-    peerDependenciesMeta:
-      markdown-it:
-        optional: true
-
-  '@mdit/plugin-figure@0.8.0':
-    resolution: {integrity: sha512-/o4RoKjnkdWc+K7m6mR7BAu2J79yYE38s8HUc8iKk9v+e9j1E+6LeXcpx1LoPnHzUhT4EO2QmUsv+kAaPFfZYw==}
-    engines: {node: '>= 18'}
-    peerDependencies:
-      markdown-it: ^14.0.0
-    peerDependenciesMeta:
-      markdown-it:
-        optional: true
-
-  '@mdit/plugin-img-lazyload@0.8.0':
-    resolution: {integrity: sha512-Rrlf2FzOxxyszbv3DpkIwEgmYKmtwHdxIO+Whkn0a9QckxnEKkaGl5KARCnM7LqX2fhEyFLgnfkr3onVOJG54g==}
-    engines: {node: '>= 18'}
-    peerDependencies:
-      markdown-it: ^14.0.0
-    peerDependenciesMeta:
-      markdown-it:
-        optional: true
-
-  '@mdit/plugin-img-mark@0.8.0':
-    resolution: {integrity: sha512-4P6z2QOfLHLMSXUP4mB/2Rnd6KeHmJBkUXJWJhybcXoIG5S5FDTFHJxOycSP4eGzfdOYAWSlkx6XwXEUGGZz5w==}
-    engines: {node: '>= 18'}
-    peerDependencies:
-      markdown-it: ^14.0.0
-    peerDependenciesMeta:
-      markdown-it:
-        optional: true
-
-  '@mdit/plugin-img-size@0.8.0':
-    resolution: {integrity: sha512-r+LbAizP/hw5SisY44VbHEnR7XUKpcHM2k2fwu5wb1+V1crxeigG4sa8rzrJEddU+k6uCl27yL5FTGbHjAl82Q==}
-    engines: {node: '>= 18'}
-    peerDependencies:
-      markdown-it: ^14.0.0
-    peerDependenciesMeta:
-      markdown-it:
-        optional: true
-
-  '@mdit/plugin-include@0.8.0':
-    resolution: {integrity: sha512-e8Z8q5VkJ6UX04tTgELraupB/MdHio7hkdYT71wBJ6UQuhSmFv/xMOxFfTcGKH5yzsbEM45BtAFHzSXIi3dMCw==}
-    peerDependencies:
-      markdown-it: ^14.0.0
-    peerDependenciesMeta:
-      markdown-it:
-        optional: true
 
   '@rollup/pluginutils@5.1.4':
     resolution: {integrity: sha512-USm05zrsFxYLPdWWq+K3STlWiT/3ELn3RcV5hJMghpeAIhxfsUIg6mt12CBJBInWMV4VneoV7SfGv8xIwo2qNQ==}
@@ -794,10 +714,6 @@ packages:
   mark.js@8.11.1:
     resolution: {integrity: sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ==}
 
-  markdown-it-shortcode-tag@1.1.0:
-    resolution: {integrity: sha512-6qVQHmfVYMYlO2HebbF6ydXoTpOl3jPJvw6RyPnWaGJLSXdxlIJ7ihyzzbXNNHkZlQPfoDehDQYMfqeOv1KwgQ==}
-    engines: {node: '>=4.0'}
-
   memoize-one@6.0.0:
     resolution: {integrity: sha512-rkpe71W0N0c0Xz6QD0eJETuWAJGnJ9afsl1srmwPrI+yBCkge5EycXXbYRyvL29zZVUWQCY7InPRCv3GDXuZNw==}
 
@@ -902,10 +818,6 @@ packages:
     resolution: {integrity: sha512-4/u/j4FrCKdi17jaxuJA0jClGxB1AvU2hw/IuayPc4ay1XGaJs/rbb4v5WKwAjNifjmXK9PIFyuPiaK8azyR9w==}
     engines: {node: '>=14.0.0'}
 
-  upath@2.0.1:
-    resolution: {integrity: sha512-1uEe95xksV1O0CYKXo8vQvN1JEbtJp7lb7C5U9HMsIp6IVwntkH/oNUzyVNQSd4S1sYk2FpSSW44FqMc8qee5w==}
-    engines: {node: '>=4'}
-
   v-lazy-image@2.1.1:
     resolution: {integrity: sha512-QC6Jcok99CRhhsO7svfI3hcBaT945dSuaHk3jr7WHm+QJMzbB/f32xKkdF45qL5ezd5KeoqHKh4gD92mQtjfXQ==}
 
@@ -939,12 +851,6 @@ packages:
         optional: true
       terser:
         optional: true
-
-  vitepress-plugin-tabs@0.5.0:
-    resolution: {integrity: sha512-SIhFWwGsUkTByfc2b279ray/E0Jt8vDTsM1LiHxmCOBAEMmvzIBZSuYYT1DpdDTiS3SuJieBheJkYnwCq/yD9A==}
-    peerDependencies:
-      vitepress: ^1.0.0-rc.27
-      vue: ^3.3.8
 
   vitepress@1.0.0-rc.39:
     resolution: {integrity: sha512-EcgoRlAAp37WOxUOYv45oxyhLrcy3Upey+mKpqW3ldsg6Ol4trPndRBk2GO0QiSvEKlb9BMerk49D/bFICN6kg==}
@@ -1220,31 +1126,6 @@ snapshots:
       vue: 3.5.13
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
-
-  '@mdit/plugin-attrs@0.8.0':
-    dependencies:
-      '@types/markdown-it': 13.0.9
-
-  '@mdit/plugin-figure@0.8.0':
-    dependencies:
-      '@types/markdown-it': 13.0.9
-
-  '@mdit/plugin-img-lazyload@0.8.0':
-    dependencies:
-      '@types/markdown-it': 13.0.9
-
-  '@mdit/plugin-img-mark@0.8.0':
-    dependencies:
-      '@types/markdown-it': 13.0.9
-
-  '@mdit/plugin-img-size@0.8.0':
-    dependencies:
-      '@types/markdown-it': 13.0.9
-
-  '@mdit/plugin-include@0.8.0':
-    dependencies:
-      '@types/markdown-it': 13.0.9
-      upath: 2.0.1
 
   '@rollup/pluginutils@5.1.4(rollup@4.34.6)':
     dependencies:
@@ -1627,8 +1508,6 @@ snapshots:
 
   mark.js@8.11.1: {}
 
-  markdown-it-shortcode-tag@1.1.0: {}
-
   memoize-one@6.0.0: {}
 
   mime-db@1.52.0: {}
@@ -1742,8 +1621,6 @@ snapshots:
       acorn: 8.14.0
       webpack-virtual-modules: 0.6.2
 
-  upath@2.0.1: {}
-
   v-lazy-image@2.1.1: {}
 
   vite@5.4.14(@types/node@20.17.17)(stylus@0.62.0):
@@ -1755,11 +1632,6 @@ snapshots:
       '@types/node': 20.17.17
       fsevents: 2.3.3
       stylus: 0.62.0
-
-  vitepress-plugin-tabs@0.5.0(vitepress@1.0.0-rc.39(@algolia/client-search@5.20.2)(@types/node@20.17.17)(async-validator@4.2.5)(axios@1.7.9)(postcss@8.5.2)(search-insights@2.17.3)(stylus@0.62.0))(vue@3.5.13):
-    dependencies:
-      vitepress: 1.0.0-rc.39(@algolia/client-search@5.20.2)(@types/node@20.17.17)(async-validator@4.2.5)(axios@1.7.9)(postcss@8.5.2)(search-insights@2.17.3)(stylus@0.62.0)
-      vue: 3.5.13
 
   vitepress@1.0.0-rc.39(@algolia/client-search@5.20.2)(@types/node@20.17.17)(async-validator@4.2.5)(axios@1.7.9)(postcss@8.5.2)(search-insights@2.17.3)(stylus@0.62.0):
     dependencies:

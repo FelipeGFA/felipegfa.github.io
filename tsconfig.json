@@ -14,14 +14,9 @@
       "sourceMap": true,
       "esModuleInterop": true,
       "isolatedModules": true,
-      "skipLibCheck": true,
-      "typeRoots": [
-        "./node_modules/@types",
-        "./typings",
-      ]
+      "skipLibCheck": true
     },
     "include": [
-      "typings/**/*.d.ts",
       "website/**/*.vue",
       "website/**/*.tsx",
       "website/**/*.ts",

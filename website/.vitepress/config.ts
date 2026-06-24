@@ -19,6 +19,12 @@ export default defineConfig({
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    nav: [
+      { text: 'Add Anime repo', link: '/add-anime-repo' },
+      { text: 'Add Manga repo', link: '/add-manga-repo' },
+      { text: 'Manga extensões', link: '/' },
+      { text: 'Anime extensões', link: '/anime' },
+    ],
     search: {
       provider: 'local'
     },
